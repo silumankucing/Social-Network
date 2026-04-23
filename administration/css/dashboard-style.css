@@ -1,0 +1,32 @@
+.dashboard-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dashboard-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.dashboard-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dashboard-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #646cff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dashboard-btn:hover {
+    background-color: #535bf2;
+}

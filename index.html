@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nolifepeople</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="icon" href="http://localhost/src/assets/logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="avatar">
+                <img src="http://localhost/data/silumankucing/profile/ava_silumankucing.png" alt="Avatar">
+            </div>
+            <h2 class="full-name">kuro</h2>
+            <p class="username">@silumankucing</p>
+            <div class="follow-stats">
+                <button class="follow-btn" onclick="showContent('followers')">350 Followers<span id="follower-count"></span></button>
+                <button class="follow-btn" onclick="showContent('following')">120 Following<span id="following-count"></span></button>
+            </div>
+            <p class="bio">Mechanical Design Engineer | Jr. Software Engineer</p>
+            <div class="buttons">
+                <button onclick="showContent('feed')">Home</button>
+                <button onclick="openFilterPopup()">Explore</button>
+                <button onclick="showContent('notification')">Notification</button>
+                <button onclick="showContent('message')">Message</button>
+                <button onclick="showContent('setting')">Setting</button>
+                <button onclick="showContent('create')">Post</button>
+                <button onclick="showContent('logout')">Logout</button>
+            </div>
+        </div>
+        <div class="right-container" id="right-container"></div>
+    </div>
+    <div id="filter-popup" class="filter-popup" style="display:none;">
+        <div class="filter-popup-content">
+            <button class="filter-btn" onclick="applyFeedFilter('all')">All Categories</button>
+            <button class="filter-btn" onclick="applyFeedFilter('photo')">Photo</button>
+            <button class="filter-btn" onclick="applyFeedFilter('video')">Video</button>
+            <button class="filter-btn" onclick="applyFeedFilter('audio')">Audio</button>
+            <button class="filter-btn" onclick="applyFeedFilter('text')">Text</button>
+            <div class="filter-popup-header">
+                <button class="ok-btn" onclick="closeFilterPopup()" title="OK">OK</button>
+                <button class="close-filter" onclick="closeFilterPopup()" title="Close">X</button>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
